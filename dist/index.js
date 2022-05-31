@@ -1,1007 +1,795 @@
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-Object.defineProperty(exports, "ApiClient", {
-  enumerable: true,
-  get: function get() {
-    return _ApiClient["default"];
-  }
-});
-Object.defineProperty(exports, "AggregateIndicators", {
-  enumerable: true,
-  get: function get() {
-    return _AggregateIndicators["default"];
-  }
-});
-Object.defineProperty(exports, "BasicFinancials", {
-  enumerable: true,
-  get: function get() {
-    return _BasicFinancials["default"];
-  }
-});
-Object.defineProperty(exports, "BondCandles", {
-  enumerable: true,
-  get: function get() {
-    return _BondCandles["default"];
-  }
-});
-Object.defineProperty(exports, "BondProfile", {
-  enumerable: true,
-  get: function get() {
-    return _BondProfile["default"];
-  }
-});
-Object.defineProperty(exports, "BreakdownItem", {
-  enumerable: true,
-  get: function get() {
-    return _BreakdownItem["default"];
-  }
-});
-Object.defineProperty(exports, "Company", {
-  enumerable: true,
-  get: function get() {
-    return _Company["default"];
-  }
-});
-Object.defineProperty(exports, "CompanyESG", {
-  enumerable: true,
-  get: function get() {
-    return _CompanyESG["default"];
-  }
-});
-Object.defineProperty(exports, "CompanyEarningsQualityScore", {
-  enumerable: true,
-  get: function get() {
-    return _CompanyEarningsQualityScore["default"];
-  }
-});
-Object.defineProperty(exports, "CompanyEarningsQualityScoreData", {
-  enumerable: true,
-  get: function get() {
-    return _CompanyEarningsQualityScoreData["default"];
-  }
-});
-Object.defineProperty(exports, "CompanyExecutive", {
-  enumerable: true,
-  get: function get() {
-    return _CompanyExecutive["default"];
-  }
-});
-Object.defineProperty(exports, "CompanyNews", {
-  enumerable: true,
-  get: function get() {
-    return _CompanyNews["default"];
-  }
-});
-Object.defineProperty(exports, "CompanyNewsStatistics", {
-  enumerable: true,
-  get: function get() {
-    return _CompanyNewsStatistics["default"];
-  }
-});
-Object.defineProperty(exports, "CompanyProfile", {
-  enumerable: true,
-  get: function get() {
-    return _CompanyProfile["default"];
-  }
-});
-Object.defineProperty(exports, "CompanyProfile2", {
-  enumerable: true,
-  get: function get() {
-    return _CompanyProfile2["default"];
-  }
-});
-Object.defineProperty(exports, "CountryMetadata", {
-  enumerable: true,
-  get: function get() {
-    return _CountryMetadata["default"];
-  }
-});
-Object.defineProperty(exports, "CovidInfo", {
-  enumerable: true,
-  get: function get() {
-    return _CovidInfo["default"];
-  }
-});
-Object.defineProperty(exports, "CryptoCandles", {
-  enumerable: true,
-  get: function get() {
-    return _CryptoCandles["default"];
-  }
-});
-Object.defineProperty(exports, "CryptoProfile", {
-  enumerable: true,
-  get: function get() {
-    return _CryptoProfile["default"];
-  }
-});
-Object.defineProperty(exports, "CryptoSymbol", {
-  enumerable: true,
-  get: function get() {
-    return _CryptoSymbol["default"];
-  }
-});
-Object.defineProperty(exports, "Development", {
-  enumerable: true,
-  get: function get() {
-    return _Development["default"];
-  }
-});
-Object.defineProperty(exports, "Dividends", {
-  enumerable: true,
-  get: function get() {
-    return _Dividends["default"];
-  }
-});
-Object.defineProperty(exports, "Dividends2", {
-  enumerable: true,
-  get: function get() {
-    return _Dividends2["default"];
-  }
-});
-Object.defineProperty(exports, "Dividends2Info", {
-  enumerable: true,
-  get: function get() {
-    return _Dividends2Info["default"];
-  }
-});
-Object.defineProperty(exports, "ETFCountryExposureData", {
-  enumerable: true,
-  get: function get() {
-    return _ETFCountryExposureData["default"];
-  }
-});
-Object.defineProperty(exports, "ETFHoldingsData", {
-  enumerable: true,
-  get: function get() {
-    return _ETFHoldingsData["default"];
-  }
-});
-Object.defineProperty(exports, "ETFProfileData", {
-  enumerable: true,
-  get: function get() {
-    return _ETFProfileData["default"];
-  }
-});
-Object.defineProperty(exports, "ETFSectorExposureData", {
-  enumerable: true,
-  get: function get() {
-    return _ETFSectorExposureData["default"];
-  }
-});
-Object.defineProperty(exports, "ETFsCountryExposure", {
-  enumerable: true,
-  get: function get() {
-    return _ETFsCountryExposure["default"];
-  }
-});
-Object.defineProperty(exports, "ETFsHoldings", {
-  enumerable: true,
-  get: function get() {
-    return _ETFsHoldings["default"];
-  }
-});
-Object.defineProperty(exports, "ETFsProfile", {
-  enumerable: true,
-  get: function get() {
-    return _ETFsProfile["default"];
-  }
-});
-Object.defineProperty(exports, "ETFsSectorExposure", {
-  enumerable: true,
-  get: function get() {
-    return _ETFsSectorExposure["default"];
-  }
-});
-Object.defineProperty(exports, "EarningRelease", {
-  enumerable: true,
-  get: function get() {
-    return _EarningRelease["default"];
-  }
-});
-Object.defineProperty(exports, "EarningResult", {
-  enumerable: true,
-  get: function get() {
-    return _EarningResult["default"];
-  }
-});
-Object.defineProperty(exports, "EarningsCalendar", {
-  enumerable: true,
-  get: function get() {
-    return _EarningsCalendar["default"];
-  }
-});
-Object.defineProperty(exports, "EarningsCallTranscripts", {
-  enumerable: true,
-  get: function get() {
-    return _EarningsCallTranscripts["default"];
-  }
-});
-Object.defineProperty(exports, "EarningsCallTranscriptsList", {
-  enumerable: true,
-  get: function get() {
-    return _EarningsCallTranscriptsList["default"];
-  }
-});
-Object.defineProperty(exports, "EarningsEstimates", {
-  enumerable: true,
-  get: function get() {
-    return _EarningsEstimates["default"];
-  }
-});
-Object.defineProperty(exports, "EarningsEstimatesInfo", {
-  enumerable: true,
-  get: function get() {
-    return _EarningsEstimatesInfo["default"];
-  }
-});
-Object.defineProperty(exports, "EbitEstimates", {
-  enumerable: true,
-  get: function get() {
-    return _EbitEstimates["default"];
-  }
-});
-Object.defineProperty(exports, "EbitEstimatesInfo", {
-  enumerable: true,
-  get: function get() {
-    return _EbitEstimatesInfo["default"];
-  }
-});
-Object.defineProperty(exports, "EbitdaEstimates", {
-  enumerable: true,
-  get: function get() {
-    return _EbitdaEstimates["default"];
-  }
-});
-Object.defineProperty(exports, "EbitdaEstimatesInfo", {
-  enumerable: true,
-  get: function get() {
-    return _EbitdaEstimatesInfo["default"];
-  }
-});
-Object.defineProperty(exports, "EconomicCalendar", {
-  enumerable: true,
-  get: function get() {
-    return _EconomicCalendar["default"];
-  }
-});
-Object.defineProperty(exports, "EconomicCode", {
-  enumerable: true,
-  get: function get() {
-    return _EconomicCode["default"];
-  }
-});
-Object.defineProperty(exports, "EconomicData", {
-  enumerable: true,
-  get: function get() {
-    return _EconomicData["default"];
-  }
-});
-Object.defineProperty(exports, "EconomicDataInfo", {
-  enumerable: true,
-  get: function get() {
-    return _EconomicDataInfo["default"];
-  }
-});
-Object.defineProperty(exports, "EconomicEvent", {
-  enumerable: true,
-  get: function get() {
-    return _EconomicEvent["default"];
-  }
-});
-Object.defineProperty(exports, "FDAComitteeMeeting", {
-  enumerable: true,
-  get: function get() {
-    return _FDAComitteeMeeting["default"];
-  }
-});
-Object.defineProperty(exports, "Filing", {
-  enumerable: true,
-  get: function get() {
-    return _Filing["default"];
-  }
-});
-Object.defineProperty(exports, "FilingSentiment", {
-  enumerable: true,
-  get: function get() {
-    return _FilingSentiment["default"];
-  }
-});
-Object.defineProperty(exports, "FinancialStatements", {
-  enumerable: true,
-  get: function get() {
-    return _FinancialStatements["default"];
-  }
-});
-Object.defineProperty(exports, "FinancialsAsReported", {
-  enumerable: true,
-  get: function get() {
-    return _FinancialsAsReported["default"];
-  }
-});
-Object.defineProperty(exports, "ForexCandles", {
-  enumerable: true,
-  get: function get() {
-    return _ForexCandles["default"];
-  }
-});
-Object.defineProperty(exports, "ForexSymbol", {
-  enumerable: true,
-  get: function get() {
-    return _ForexSymbol["default"];
-  }
-});
-Object.defineProperty(exports, "Forexrates", {
-  enumerable: true,
-  get: function get() {
-    return _Forexrates["default"];
-  }
-});
-Object.defineProperty(exports, "FundOwnership", {
-  enumerable: true,
-  get: function get() {
-    return _FundOwnership["default"];
-  }
-});
-Object.defineProperty(exports, "FundOwnershipInfo", {
-  enumerable: true,
-  get: function get() {
-    return _FundOwnershipInfo["default"];
-  }
-});
-Object.defineProperty(exports, "HistoricalNBBO", {
-  enumerable: true,
-  get: function get() {
-    return _HistoricalNBBO["default"];
-  }
-});
-Object.defineProperty(exports, "IPOCalendar", {
-  enumerable: true,
-  get: function get() {
-    return _IPOCalendar["default"];
-  }
-});
-Object.defineProperty(exports, "IPOEvent", {
-  enumerable: true,
-  get: function get() {
-    return _IPOEvent["default"];
-  }
-});
-Object.defineProperty(exports, "IndexHistoricalConstituent", {
-  enumerable: true,
-  get: function get() {
-    return _IndexHistoricalConstituent["default"];
-  }
-});
-Object.defineProperty(exports, "Indicator", {
-  enumerable: true,
-  get: function get() {
-    return _Indicator["default"];
-  }
-});
-Object.defineProperty(exports, "IndicesConstituents", {
-  enumerable: true,
-  get: function get() {
-    return _IndicesConstituents["default"];
-  }
-});
-Object.defineProperty(exports, "IndicesHistoricalConstituents", {
-  enumerable: true,
-  get: function get() {
-    return _IndicesHistoricalConstituents["default"];
-  }
-});
-Object.defineProperty(exports, "InsiderSentiments", {
-  enumerable: true,
-  get: function get() {
-    return _InsiderSentiments["default"];
-  }
-});
-Object.defineProperty(exports, "InsiderSentimentsData", {
-  enumerable: true,
-  get: function get() {
-    return _InsiderSentimentsData["default"];
-  }
-});
-Object.defineProperty(exports, "InsiderTransactions", {
-  enumerable: true,
-  get: function get() {
-    return _InsiderTransactions["default"];
-  }
-});
-Object.defineProperty(exports, "InternationalFiling", {
-  enumerable: true,
-  get: function get() {
-    return _InternationalFiling["default"];
-  }
-});
-Object.defineProperty(exports, "InvestmentThemePortfolio", {
-  enumerable: true,
-  get: function get() {
-    return _InvestmentThemePortfolio["default"];
-  }
-});
-Object.defineProperty(exports, "InvestmentThemes", {
-  enumerable: true,
-  get: function get() {
-    return _InvestmentThemes["default"];
-  }
-});
-Object.defineProperty(exports, "KeyCustomersSuppliers", {
-  enumerable: true,
-  get: function get() {
-    return _KeyCustomersSuppliers["default"];
-  }
-});
-Object.defineProperty(exports, "LastBidAsk", {
-  enumerable: true,
-  get: function get() {
-    return _LastBidAsk["default"];
-  }
-});
-Object.defineProperty(exports, "LobbyingData", {
-  enumerable: true,
-  get: function get() {
-    return _LobbyingData["default"];
-  }
-});
-Object.defineProperty(exports, "LobbyingResult", {
-  enumerable: true,
-  get: function get() {
-    return _LobbyingResult["default"];
-  }
-});
-Object.defineProperty(exports, "MarketNews", {
-  enumerable: true,
-  get: function get() {
-    return _MarketNews["default"];
-  }
-});
-Object.defineProperty(exports, "MutualFundCountryExposure", {
-  enumerable: true,
-  get: function get() {
-    return _MutualFundCountryExposure["default"];
-  }
-});
-Object.defineProperty(exports, "MutualFundCountryExposureData", {
-  enumerable: true,
-  get: function get() {
-    return _MutualFundCountryExposureData["default"];
-  }
-});
-Object.defineProperty(exports, "MutualFundHoldings", {
-  enumerable: true,
-  get: function get() {
-    return _MutualFundHoldings["default"];
-  }
-});
-Object.defineProperty(exports, "MutualFundHoldingsData", {
-  enumerable: true,
-  get: function get() {
-    return _MutualFundHoldingsData["default"];
-  }
-});
-Object.defineProperty(exports, "MutualFundProfile", {
-  enumerable: true,
-  get: function get() {
-    return _MutualFundProfile["default"];
-  }
-});
-Object.defineProperty(exports, "MutualFundProfileData", {
-  enumerable: true,
-  get: function get() {
-    return _MutualFundProfileData["default"];
-  }
-});
-Object.defineProperty(exports, "MutualFundSectorExposure", {
-  enumerable: true,
-  get: function get() {
-    return _MutualFundSectorExposure["default"];
-  }
-});
-Object.defineProperty(exports, "MutualFundSectorExposureData", {
-  enumerable: true,
-  get: function get() {
-    return _MutualFundSectorExposureData["default"];
-  }
-});
-Object.defineProperty(exports, "NewsSentiment", {
-  enumerable: true,
-  get: function get() {
-    return _NewsSentiment["default"];
-  }
-});
-Object.defineProperty(exports, "Ownership", {
-  enumerable: true,
-  get: function get() {
-    return _Ownership["default"];
-  }
-});
-Object.defineProperty(exports, "OwnershipInfo", {
-  enumerable: true,
-  get: function get() {
-    return _OwnershipInfo["default"];
-  }
-});
-Object.defineProperty(exports, "PatternRecognition", {
-  enumerable: true,
-  get: function get() {
-    return _PatternRecognition["default"];
-  }
-});
-Object.defineProperty(exports, "PressRelease", {
-  enumerable: true,
-  get: function get() {
-    return _PressRelease["default"];
-  }
-});
-Object.defineProperty(exports, "PriceTarget", {
-  enumerable: true,
-  get: function get() {
-    return _PriceTarget["default"];
-  }
-});
-Object.defineProperty(exports, "Quote", {
-  enumerable: true,
-  get: function get() {
-    return _Quote["default"];
-  }
-});
-Object.defineProperty(exports, "RecommendationTrend", {
-  enumerable: true,
-  get: function get() {
-    return _RecommendationTrend["default"];
-  }
-});
-Object.defineProperty(exports, "RedditSentimentContent", {
-  enumerable: true,
-  get: function get() {
-    return _RedditSentimentContent["default"];
-  }
-});
-Object.defineProperty(exports, "Report", {
-  enumerable: true,
-  get: function get() {
-    return _Report["default"];
-  }
-});
-Object.defineProperty(exports, "RevenueBreakdown", {
-  enumerable: true,
-  get: function get() {
-    return _RevenueBreakdown["default"];
-  }
-});
-Object.defineProperty(exports, "RevenueEstimates", {
-  enumerable: true,
-  get: function get() {
-    return _RevenueEstimates["default"];
-  }
-});
-Object.defineProperty(exports, "RevenueEstimatesInfo", {
-  enumerable: true,
-  get: function get() {
-    return _RevenueEstimatesInfo["default"];
-  }
-});
-Object.defineProperty(exports, "SECSentimentAnalysis", {
-  enumerable: true,
-  get: function get() {
-    return _SECSentimentAnalysis["default"];
-  }
-});
-Object.defineProperty(exports, "Sentiment", {
-  enumerable: true,
-  get: function get() {
-    return _Sentiment["default"];
-  }
-});
-Object.defineProperty(exports, "SimilarityIndex", {
-  enumerable: true,
-  get: function get() {
-    return _SimilarityIndex["default"];
-  }
-});
-Object.defineProperty(exports, "SimilarityIndexInfo", {
-  enumerable: true,
-  get: function get() {
-    return _SimilarityIndexInfo["default"];
-  }
-});
-Object.defineProperty(exports, "SocialSentiment", {
-  enumerable: true,
-  get: function get() {
-    return _SocialSentiment["default"];
-  }
-});
-Object.defineProperty(exports, "Split", {
-  enumerable: true,
-  get: function get() {
-    return _Split["default"];
-  }
-});
-Object.defineProperty(exports, "StockCandles", {
-  enumerable: true,
-  get: function get() {
-    return _StockCandles["default"];
-  }
-});
-Object.defineProperty(exports, "StockSymbol", {
-  enumerable: true,
-  get: function get() {
-    return _StockSymbol["default"];
-  }
-});
-Object.defineProperty(exports, "StockTranscripts", {
-  enumerable: true,
-  get: function get() {
-    return _StockTranscripts["default"];
-  }
-});
-Object.defineProperty(exports, "SupplyChainRelationships", {
-  enumerable: true,
-  get: function get() {
-    return _SupplyChainRelationships["default"];
-  }
-});
-Object.defineProperty(exports, "SupportResistance", {
-  enumerable: true,
-  get: function get() {
-    return _SupportResistance["default"];
-  }
-});
-Object.defineProperty(exports, "SymbolLookup", {
-  enumerable: true,
-  get: function get() {
-    return _SymbolLookup["default"];
-  }
-});
-Object.defineProperty(exports, "SymbolLookupInfo", {
-  enumerable: true,
-  get: function get() {
-    return _SymbolLookupInfo["default"];
-  }
-});
-Object.defineProperty(exports, "TechnicalAnalysis", {
-  enumerable: true,
-  get: function get() {
-    return _TechnicalAnalysis["default"];
-  }
-});
-Object.defineProperty(exports, "TickData", {
-  enumerable: true,
-  get: function get() {
-    return _TickData["default"];
-  }
-});
-Object.defineProperty(exports, "Transactions", {
-  enumerable: true,
-  get: function get() {
-    return _Transactions["default"];
-  }
-});
-Object.defineProperty(exports, "TranscriptContent", {
-  enumerable: true,
-  get: function get() {
-    return _TranscriptContent["default"];
-  }
-});
-Object.defineProperty(exports, "TranscriptParticipant", {
-  enumerable: true,
-  get: function get() {
-    return _TranscriptParticipant["default"];
-  }
-});
-Object.defineProperty(exports, "Trend", {
-  enumerable: true,
-  get: function get() {
-    return _Trend["default"];
-  }
-});
-Object.defineProperty(exports, "TwitterSentimentContent", {
-  enumerable: true,
-  get: function get() {
-    return _TwitterSentimentContent["default"];
-  }
-});
-Object.defineProperty(exports, "UpgradeDowngrade", {
-  enumerable: true,
-  get: function get() {
-    return _UpgradeDowngrade["default"];
-  }
-});
-Object.defineProperty(exports, "UsaSpending", {
-  enumerable: true,
-  get: function get() {
-    return _UsaSpending["default"];
-  }
-});
-Object.defineProperty(exports, "UsaSpendingResult", {
-  enumerable: true,
-  get: function get() {
-    return _UsaSpendingResult["default"];
-  }
-});
-Object.defineProperty(exports, "UsptoPatent", {
-  enumerable: true,
-  get: function get() {
-    return _UsptoPatent["default"];
-  }
-});
-Object.defineProperty(exports, "UsptoPatentResult", {
-  enumerable: true,
-  get: function get() {
-    return _UsptoPatentResult["default"];
-  }
-});
-Object.defineProperty(exports, "VisaApplication", {
-  enumerable: true,
-  get: function get() {
-    return _VisaApplication["default"];
-  }
-});
-Object.defineProperty(exports, "VisaApplicationResult", {
-  enumerable: true,
-  get: function get() {
-    return _VisaApplicationResult["default"];
-  }
-});
-Object.defineProperty(exports, "DefaultApi", {
-  enumerable: true,
-  get: function get() {
-    return _DefaultApi["default"];
-  }
-});
-
-var _ApiClient = _interopRequireDefault(require("./ApiClient"));
-
-var _AggregateIndicators = _interopRequireDefault(require("./model/AggregateIndicators"));
-
-var _BasicFinancials = _interopRequireDefault(require("./model/BasicFinancials"));
-
-var _BondCandles = _interopRequireDefault(require("./model/BondCandles"));
-
-var _BondProfile = _interopRequireDefault(require("./model/BondProfile"));
-
-var _BreakdownItem = _interopRequireDefault(require("./model/BreakdownItem"));
-
-var _Company = _interopRequireDefault(require("./model/Company"));
-
-var _CompanyESG = _interopRequireDefault(require("./model/CompanyESG"));
-
-var _CompanyEarningsQualityScore = _interopRequireDefault(require("./model/CompanyEarningsQualityScore"));
-
-var _CompanyEarningsQualityScoreData = _interopRequireDefault(require("./model/CompanyEarningsQualityScoreData"));
-
-var _CompanyExecutive = _interopRequireDefault(require("./model/CompanyExecutive"));
-
-var _CompanyNews = _interopRequireDefault(require("./model/CompanyNews"));
-
-var _CompanyNewsStatistics = _interopRequireDefault(require("./model/CompanyNewsStatistics"));
-
-var _CompanyProfile = _interopRequireDefault(require("./model/CompanyProfile"));
-
-var _CompanyProfile2 = _interopRequireDefault(require("./model/CompanyProfile2"));
-
-var _CountryMetadata = _interopRequireDefault(require("./model/CountryMetadata"));
-
-var _CovidInfo = _interopRequireDefault(require("./model/CovidInfo"));
-
-var _CryptoCandles = _interopRequireDefault(require("./model/CryptoCandles"));
-
-var _CryptoProfile = _interopRequireDefault(require("./model/CryptoProfile"));
-
-var _CryptoSymbol = _interopRequireDefault(require("./model/CryptoSymbol"));
-
-var _Development = _interopRequireDefault(require("./model/Development"));
-
-var _Dividends = _interopRequireDefault(require("./model/Dividends"));
-
-var _Dividends2 = _interopRequireDefault(require("./model/Dividends2"));
-
-var _Dividends2Info = _interopRequireDefault(require("./model/Dividends2Info"));
-
-var _ETFCountryExposureData = _interopRequireDefault(require("./model/ETFCountryExposureData"));
-
-var _ETFHoldingsData = _interopRequireDefault(require("./model/ETFHoldingsData"));
-
-var _ETFProfileData = _interopRequireDefault(require("./model/ETFProfileData"));
-
-var _ETFSectorExposureData = _interopRequireDefault(require("./model/ETFSectorExposureData"));
-
-var _ETFsCountryExposure = _interopRequireDefault(require("./model/ETFsCountryExposure"));
-
-var _ETFsHoldings = _interopRequireDefault(require("./model/ETFsHoldings"));
-
-var _ETFsProfile = _interopRequireDefault(require("./model/ETFsProfile"));
-
-var _ETFsSectorExposure = _interopRequireDefault(require("./model/ETFsSectorExposure"));
-
-var _EarningRelease = _interopRequireDefault(require("./model/EarningRelease"));
-
-var _EarningResult = _interopRequireDefault(require("./model/EarningResult"));
-
-var _EarningsCalendar = _interopRequireDefault(require("./model/EarningsCalendar"));
-
-var _EarningsCallTranscripts = _interopRequireDefault(require("./model/EarningsCallTranscripts"));
-
-var _EarningsCallTranscriptsList = _interopRequireDefault(require("./model/EarningsCallTranscriptsList"));
-
-var _EarningsEstimates = _interopRequireDefault(require("./model/EarningsEstimates"));
-
-var _EarningsEstimatesInfo = _interopRequireDefault(require("./model/EarningsEstimatesInfo"));
-
-var _EbitEstimates = _interopRequireDefault(require("./model/EbitEstimates"));
-
-var _EbitEstimatesInfo = _interopRequireDefault(require("./model/EbitEstimatesInfo"));
-
-var _EbitdaEstimates = _interopRequireDefault(require("./model/EbitdaEstimates"));
-
-var _EbitdaEstimatesInfo = _interopRequireDefault(require("./model/EbitdaEstimatesInfo"));
-
-var _EconomicCalendar = _interopRequireDefault(require("./model/EconomicCalendar"));
-
-var _EconomicCode = _interopRequireDefault(require("./model/EconomicCode"));
-
-var _EconomicData = _interopRequireDefault(require("./model/EconomicData"));
-
-var _EconomicDataInfo = _interopRequireDefault(require("./model/EconomicDataInfo"));
-
-var _EconomicEvent = _interopRequireDefault(require("./model/EconomicEvent"));
-
-var _FDAComitteeMeeting = _interopRequireDefault(require("./model/FDAComitteeMeeting"));
-
-var _Filing = _interopRequireDefault(require("./model/Filing"));
-
-var _FilingSentiment = _interopRequireDefault(require("./model/FilingSentiment"));
-
-var _FinancialStatements = _interopRequireDefault(require("./model/FinancialStatements"));
-
-var _FinancialsAsReported = _interopRequireDefault(require("./model/FinancialsAsReported"));
-
-var _ForexCandles = _interopRequireDefault(require("./model/ForexCandles"));
-
-var _ForexSymbol = _interopRequireDefault(require("./model/ForexSymbol"));
-
-var _Forexrates = _interopRequireDefault(require("./model/Forexrates"));
-
-var _FundOwnership = _interopRequireDefault(require("./model/FundOwnership"));
-
-var _FundOwnershipInfo = _interopRequireDefault(require("./model/FundOwnershipInfo"));
-
-var _HistoricalNBBO = _interopRequireDefault(require("./model/HistoricalNBBO"));
-
-var _IPOCalendar = _interopRequireDefault(require("./model/IPOCalendar"));
-
-var _IPOEvent = _interopRequireDefault(require("./model/IPOEvent"));
-
-var _IndexHistoricalConstituent = _interopRequireDefault(require("./model/IndexHistoricalConstituent"));
-
-var _Indicator = _interopRequireDefault(require("./model/Indicator"));
-
-var _IndicesConstituents = _interopRequireDefault(require("./model/IndicesConstituents"));
-
-var _IndicesHistoricalConstituents = _interopRequireDefault(require("./model/IndicesHistoricalConstituents"));
-
-var _InsiderSentiments = _interopRequireDefault(require("./model/InsiderSentiments"));
-
-var _InsiderSentimentsData = _interopRequireDefault(require("./model/InsiderSentimentsData"));
-
-var _InsiderTransactions = _interopRequireDefault(require("./model/InsiderTransactions"));
-
-var _InternationalFiling = _interopRequireDefault(require("./model/InternationalFiling"));
-
-var _InvestmentThemePortfolio = _interopRequireDefault(require("./model/InvestmentThemePortfolio"));
-
-var _InvestmentThemes = _interopRequireDefault(require("./model/InvestmentThemes"));
-
-var _KeyCustomersSuppliers = _interopRequireDefault(require("./model/KeyCustomersSuppliers"));
-
-var _LastBidAsk = _interopRequireDefault(require("./model/LastBidAsk"));
-
-var _LobbyingData = _interopRequireDefault(require("./model/LobbyingData"));
-
-var _LobbyingResult = _interopRequireDefault(require("./model/LobbyingResult"));
-
-var _MarketNews = _interopRequireDefault(require("./model/MarketNews"));
-
-var _MutualFundCountryExposure = _interopRequireDefault(require("./model/MutualFundCountryExposure"));
-
-var _MutualFundCountryExposureData = _interopRequireDefault(require("./model/MutualFundCountryExposureData"));
-
-var _MutualFundHoldings = _interopRequireDefault(require("./model/MutualFundHoldings"));
-
-var _MutualFundHoldingsData = _interopRequireDefault(require("./model/MutualFundHoldingsData"));
-
-var _MutualFundProfile = _interopRequireDefault(require("./model/MutualFundProfile"));
-
-var _MutualFundProfileData = _interopRequireDefault(require("./model/MutualFundProfileData"));
-
-var _MutualFundSectorExposure = _interopRequireDefault(require("./model/MutualFundSectorExposure"));
-
-var _MutualFundSectorExposureData = _interopRequireDefault(require("./model/MutualFundSectorExposureData"));
-
-var _NewsSentiment = _interopRequireDefault(require("./model/NewsSentiment"));
-
-var _Ownership = _interopRequireDefault(require("./model/Ownership"));
-
-var _OwnershipInfo = _interopRequireDefault(require("./model/OwnershipInfo"));
-
-var _PatternRecognition = _interopRequireDefault(require("./model/PatternRecognition"));
-
-var _PressRelease = _interopRequireDefault(require("./model/PressRelease"));
-
-var _PriceTarget = _interopRequireDefault(require("./model/PriceTarget"));
-
-var _Quote = _interopRequireDefault(require("./model/Quote"));
-
-var _RecommendationTrend = _interopRequireDefault(require("./model/RecommendationTrend"));
-
-var _RedditSentimentContent = _interopRequireDefault(require("./model/RedditSentimentContent"));
-
-var _Report = _interopRequireDefault(require("./model/Report"));
-
-var _RevenueBreakdown = _interopRequireDefault(require("./model/RevenueBreakdown"));
-
-var _RevenueEstimates = _interopRequireDefault(require("./model/RevenueEstimates"));
-
-var _RevenueEstimatesInfo = _interopRequireDefault(require("./model/RevenueEstimatesInfo"));
-
-var _SECSentimentAnalysis = _interopRequireDefault(require("./model/SECSentimentAnalysis"));
-
-var _Sentiment = _interopRequireDefault(require("./model/Sentiment"));
-
-var _SimilarityIndex = _interopRequireDefault(require("./model/SimilarityIndex"));
-
-var _SimilarityIndexInfo = _interopRequireDefault(require("./model/SimilarityIndexInfo"));
-
-var _SocialSentiment = _interopRequireDefault(require("./model/SocialSentiment"));
-
-var _Split = _interopRequireDefault(require("./model/Split"));
-
-var _StockCandles = _interopRequireDefault(require("./model/StockCandles"));
-
-var _StockSymbol = _interopRequireDefault(require("./model/StockSymbol"));
-
-var _StockTranscripts = _interopRequireDefault(require("./model/StockTranscripts"));
-
-var _SupplyChainRelationships = _interopRequireDefault(require("./model/SupplyChainRelationships"));
-
-var _SupportResistance = _interopRequireDefault(require("./model/SupportResistance"));
-
-var _SymbolLookup = _interopRequireDefault(require("./model/SymbolLookup"));
-
-var _SymbolLookupInfo = _interopRequireDefault(require("./model/SymbolLookupInfo"));
-
-var _TechnicalAnalysis = _interopRequireDefault(require("./model/TechnicalAnalysis"));
-
-var _TickData = _interopRequireDefault(require("./model/TickData"));
-
-var _Transactions = _interopRequireDefault(require("./model/Transactions"));
-
-var _TranscriptContent = _interopRequireDefault(require("./model/TranscriptContent"));
-
-var _TranscriptParticipant = _interopRequireDefault(require("./model/TranscriptParticipant"));
-
-var _Trend = _interopRequireDefault(require("./model/Trend"));
-
-var _TwitterSentimentContent = _interopRequireDefault(require("./model/TwitterSentimentContent"));
-
-var _UpgradeDowngrade = _interopRequireDefault(require("./model/UpgradeDowngrade"));
-
-var _UsaSpending = _interopRequireDefault(require("./model/UsaSpending"));
-
-var _UsaSpendingResult = _interopRequireDefault(require("./model/UsaSpendingResult"));
-
-var _UsptoPatent = _interopRequireDefault(require("./model/UsptoPatent"));
-
-var _UsptoPatentResult = _interopRequireDefault(require("./model/UsptoPatentResult"));
-
-var _VisaApplication = _interopRequireDefault(require("./model/VisaApplication"));
-
-var _VisaApplicationResult = _interopRequireDefault(require("./model/VisaApplicationResult"));
-
-var _DefaultApi = _interopRequireDefault(require("./api/DefaultApi"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+/**
+ * Finnhub API
+ * No description provided (generated by Openapi Generator https://github.com/openapitools/openapi-generator)
+ *
+ * The version of the OpenAPI document: 1.0.0
+ * 
+ *
+ * NOTE: This class is auto generated by OpenAPI Generator (https://openapi-generator.tech).
+ * https://openapi-generator.tech
+ * Do not edit the class manually.
+ *
+ */
+import ApiClient from './ApiClient';
+import AggregateIndicators from './model/AggregateIndicators';
+import BasicFinancials from './model/BasicFinancials';
+import BondCandles from './model/BondCandles';
+import BondProfile from './model/BondProfile';
+import BreakdownItem from './model/BreakdownItem';
+import Company from './model/Company';
+import CompanyESG from './model/CompanyESG';
+import CompanyEarningsQualityScore from './model/CompanyEarningsQualityScore';
+import CompanyEarningsQualityScoreData from './model/CompanyEarningsQualityScoreData';
+import CompanyExecutive from './model/CompanyExecutive';
+import CompanyNews from './model/CompanyNews';
+import CompanyNewsStatistics from './model/CompanyNewsStatistics';
+import CompanyProfile from './model/CompanyProfile';
+import CompanyProfile2 from './model/CompanyProfile2';
+import CountryMetadata from './model/CountryMetadata';
+import CovidInfo from './model/CovidInfo';
+import CryptoCandles from './model/CryptoCandles';
+import CryptoProfile from './model/CryptoProfile';
+import CryptoSymbol from './model/CryptoSymbol';
+import Development from './model/Development';
+import Dividends from './model/Dividends';
+import Dividends2 from './model/Dividends2';
+import Dividends2Info from './model/Dividends2Info';
+import ETFCountryExposureData from './model/ETFCountryExposureData';
+import ETFHoldingsData from './model/ETFHoldingsData';
+import ETFProfileData from './model/ETFProfileData';
+import ETFSectorExposureData from './model/ETFSectorExposureData';
+import ETFsCountryExposure from './model/ETFsCountryExposure';
+import ETFsHoldings from './model/ETFsHoldings';
+import ETFsProfile from './model/ETFsProfile';
+import ETFsSectorExposure from './model/ETFsSectorExposure';
+import EarningRelease from './model/EarningRelease';
+import EarningResult from './model/EarningResult';
+import EarningsCalendar from './model/EarningsCalendar';
+import EarningsCallTranscripts from './model/EarningsCallTranscripts';
+import EarningsCallTranscriptsList from './model/EarningsCallTranscriptsList';
+import EarningsEstimates from './model/EarningsEstimates';
+import EarningsEstimatesInfo from './model/EarningsEstimatesInfo';
+import EbitEstimates from './model/EbitEstimates';
+import EbitEstimatesInfo from './model/EbitEstimatesInfo';
+import EbitdaEstimates from './model/EbitdaEstimates';
+import EbitdaEstimatesInfo from './model/EbitdaEstimatesInfo';
+import EconomicCalendar from './model/EconomicCalendar';
+import EconomicCode from './model/EconomicCode';
+import EconomicData from './model/EconomicData';
+import EconomicDataInfo from './model/EconomicDataInfo';
+import EconomicEvent from './model/EconomicEvent';
+import FDAComitteeMeeting from './model/FDAComitteeMeeting';
+import Filing from './model/Filing';
+import FilingSentiment from './model/FilingSentiment';
+import FinancialStatements from './model/FinancialStatements';
+import FinancialsAsReported from './model/FinancialsAsReported';
+import ForexCandles from './model/ForexCandles';
+import ForexSymbol from './model/ForexSymbol';
+import Forexrates from './model/Forexrates';
+import FundOwnership from './model/FundOwnership';
+import FundOwnershipInfo from './model/FundOwnershipInfo';
+import HistoricalNBBO from './model/HistoricalNBBO';
+import IPOCalendar from './model/IPOCalendar';
+import IPOEvent from './model/IPOEvent';
+import IndexHistoricalConstituent from './model/IndexHistoricalConstituent';
+import Indicator from './model/Indicator';
+import IndicesConstituents from './model/IndicesConstituents';
+import IndicesHistoricalConstituents from './model/IndicesHistoricalConstituents';
+import InsiderSentiments from './model/InsiderSentiments';
+import InsiderSentimentsData from './model/InsiderSentimentsData';
+import InsiderTransactions from './model/InsiderTransactions';
+import InternationalFiling from './model/InternationalFiling';
+import InvestmentThemePortfolio from './model/InvestmentThemePortfolio';
+import InvestmentThemes from './model/InvestmentThemes';
+import KeyCustomersSuppliers from './model/KeyCustomersSuppliers';
+import LastBidAsk from './model/LastBidAsk';
+import LobbyingData from './model/LobbyingData';
+import LobbyingResult from './model/LobbyingResult';
+import MarketNews from './model/MarketNews';
+import MutualFundCountryExposure from './model/MutualFundCountryExposure';
+import MutualFundCountryExposureData from './model/MutualFundCountryExposureData';
+import MutualFundHoldings from './model/MutualFundHoldings';
+import MutualFundHoldingsData from './model/MutualFundHoldingsData';
+import MutualFundProfile from './model/MutualFundProfile';
+import MutualFundProfileData from './model/MutualFundProfileData';
+import MutualFundSectorExposure from './model/MutualFundSectorExposure';
+import MutualFundSectorExposureData from './model/MutualFundSectorExposureData';
+import NewsSentiment from './model/NewsSentiment';
+import Ownership from './model/Ownership';
+import OwnershipInfo from './model/OwnershipInfo';
+import PatternRecognition from './model/PatternRecognition';
+import PressRelease from './model/PressRelease';
+import PriceTarget from './model/PriceTarget';
+import Quote from './model/Quote';
+import RecommendationTrend from './model/RecommendationTrend';
+import RedditSentimentContent from './model/RedditSentimentContent';
+import Report from './model/Report';
+import RevenueBreakdown from './model/RevenueBreakdown';
+import RevenueEstimates from './model/RevenueEstimates';
+import RevenueEstimatesInfo from './model/RevenueEstimatesInfo';
+import SECSentimentAnalysis from './model/SECSentimentAnalysis';
+import Sentiment from './model/Sentiment';
+import SimilarityIndex from './model/SimilarityIndex';
+import SimilarityIndexInfo from './model/SimilarityIndexInfo';
+import SocialSentiment from './model/SocialSentiment';
+import Split from './model/Split';
+import StockCandles from './model/StockCandles';
+import StockSymbol from './model/StockSymbol';
+import StockTranscripts from './model/StockTranscripts';
+import SupplyChainRelationships from './model/SupplyChainRelationships';
+import SupportResistance from './model/SupportResistance';
+import SymbolLookup from './model/SymbolLookup';
+import SymbolLookupInfo from './model/SymbolLookupInfo';
+import TechnicalAnalysis from './model/TechnicalAnalysis';
+import TickData from './model/TickData';
+import Transactions from './model/Transactions';
+import TranscriptContent from './model/TranscriptContent';
+import TranscriptParticipant from './model/TranscriptParticipant';
+import Trend from './model/Trend';
+import TwitterSentimentContent from './model/TwitterSentimentContent';
+import UpgradeDowngrade from './model/UpgradeDowngrade';
+import UsaSpending from './model/UsaSpending';
+import UsaSpendingResult from './model/UsaSpendingResult';
+import UsptoPatent from './model/UsptoPatent';
+import UsptoPatentResult from './model/UsptoPatentResult';
+import VisaApplication from './model/VisaApplication';
+import VisaApplicationResult from './model/VisaApplicationResult';
+import DefaultApi from './api/DefaultApi';
+/**
+* JS API client generated by OpenAPI Generator.<br>
+* The <code>index</code> module provides access to constructors for all the classes which comprise the public API.
+* <p>
+* An AMD (recommended!) or CommonJS application will generally do something equivalent to the following:
+* <pre>
+* var finnhub = require('index'); // See note below*.
+* var xxxSvc = new finnhub.XxxApi(); // Allocate the API class we're going to use.
+* var yyyModel = new finnhub.Yyy(); // Construct a model instance.
+* yyyModel.someProperty = 'someValue';
+* ...
+* var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.
+* ...
+* </pre>
+* <em>*NOTE: For a top-level AMD script, use require(['index'], function(){...})
+* and put the application logic within the callback function.</em>
+* </p>
+* <p>
+* A non-AMD browser application (discouraged) might do something like this:
+* <pre>
+* var xxxSvc = new finnhub.XxxApi(); // Allocate the API class we're going to use.
+* var yyy = new finnhub.Yyy(); // Construct a model instance.
+* yyyModel.someProperty = 'someValue';
+* ...
+* var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.
+* ...
+* </pre>
+* </p>
+* @module index
+* @version 1.2.14
+*/
+
+export {
+/**
+ * The ApiClient constructor.
+ * @property {module:ApiClient}
+ */
+ApiClient
+/**
+ * The AggregateIndicators model constructor.
+ * @property {module:model/AggregateIndicators}
+ */
+, AggregateIndicators
+/**
+ * The BasicFinancials model constructor.
+ * @property {module:model/BasicFinancials}
+ */
+, BasicFinancials
+/**
+ * The BondCandles model constructor.
+ * @property {module:model/BondCandles}
+ */
+, BondCandles
+/**
+ * The BondProfile model constructor.
+ * @property {module:model/BondProfile}
+ */
+, BondProfile
+/**
+ * The BreakdownItem model constructor.
+ * @property {module:model/BreakdownItem}
+ */
+, BreakdownItem
+/**
+ * The Company model constructor.
+ * @property {module:model/Company}
+ */
+, Company
+/**
+ * The CompanyESG model constructor.
+ * @property {module:model/CompanyESG}
+ */
+, CompanyESG
+/**
+ * The CompanyEarningsQualityScore model constructor.
+ * @property {module:model/CompanyEarningsQualityScore}
+ */
+, CompanyEarningsQualityScore
+/**
+ * The CompanyEarningsQualityScoreData model constructor.
+ * @property {module:model/CompanyEarningsQualityScoreData}
+ */
+, CompanyEarningsQualityScoreData
+/**
+ * The CompanyExecutive model constructor.
+ * @property {module:model/CompanyExecutive}
+ */
+, CompanyExecutive
+/**
+ * The CompanyNews model constructor.
+ * @property {module:model/CompanyNews}
+ */
+, CompanyNews
+/**
+ * The CompanyNewsStatistics model constructor.
+ * @property {module:model/CompanyNewsStatistics}
+ */
+, CompanyNewsStatistics
+/**
+ * The CompanyProfile model constructor.
+ * @property {module:model/CompanyProfile}
+ */
+, CompanyProfile
+/**
+ * The CompanyProfile2 model constructor.
+ * @property {module:model/CompanyProfile2}
+ */
+, CompanyProfile2
+/**
+ * The CountryMetadata model constructor.
+ * @property {module:model/CountryMetadata}
+ */
+, CountryMetadata
+/**
+ * The CovidInfo model constructor.
+ * @property {module:model/CovidInfo}
+ */
+, CovidInfo
+/**
+ * The CryptoCandles model constructor.
+ * @property {module:model/CryptoCandles}
+ */
+, CryptoCandles
+/**
+ * The CryptoProfile model constructor.
+ * @property {module:model/CryptoProfile}
+ */
+, CryptoProfile
+/**
+ * The CryptoSymbol model constructor.
+ * @property {module:model/CryptoSymbol}
+ */
+, CryptoSymbol
+/**
+ * The Development model constructor.
+ * @property {module:model/Development}
+ */
+, Development
+/**
+ * The Dividends model constructor.
+ * @property {module:model/Dividends}
+ */
+, Dividends
+/**
+ * The Dividends2 model constructor.
+ * @property {module:model/Dividends2}
+ */
+, Dividends2
+/**
+ * The Dividends2Info model constructor.
+ * @property {module:model/Dividends2Info}
+ */
+, Dividends2Info
+/**
+ * The ETFCountryExposureData model constructor.
+ * @property {module:model/ETFCountryExposureData}
+ */
+, ETFCountryExposureData
+/**
+ * The ETFHoldingsData model constructor.
+ * @property {module:model/ETFHoldingsData}
+ */
+, ETFHoldingsData
+/**
+ * The ETFProfileData model constructor.
+ * @property {module:model/ETFProfileData}
+ */
+, ETFProfileData
+/**
+ * The ETFSectorExposureData model constructor.
+ * @property {module:model/ETFSectorExposureData}
+ */
+, ETFSectorExposureData
+/**
+ * The ETFsCountryExposure model constructor.
+ * @property {module:model/ETFsCountryExposure}
+ */
+, ETFsCountryExposure
+/**
+ * The ETFsHoldings model constructor.
+ * @property {module:model/ETFsHoldings}
+ */
+, ETFsHoldings
+/**
+ * The ETFsProfile model constructor.
+ * @property {module:model/ETFsProfile}
+ */
+, ETFsProfile
+/**
+ * The ETFsSectorExposure model constructor.
+ * @property {module:model/ETFsSectorExposure}
+ */
+, ETFsSectorExposure
+/**
+ * The EarningRelease model constructor.
+ * @property {module:model/EarningRelease}
+ */
+, EarningRelease
+/**
+ * The EarningResult model constructor.
+ * @property {module:model/EarningResult}
+ */
+, EarningResult
+/**
+ * The EarningsCalendar model constructor.
+ * @property {module:model/EarningsCalendar}
+ */
+, EarningsCalendar
+/**
+ * The EarningsCallTranscripts model constructor.
+ * @property {module:model/EarningsCallTranscripts}
+ */
+, EarningsCallTranscripts
+/**
+ * The EarningsCallTranscriptsList model constructor.
+ * @property {module:model/EarningsCallTranscriptsList}
+ */
+, EarningsCallTranscriptsList
+/**
+ * The EarningsEstimates model constructor.
+ * @property {module:model/EarningsEstimates}
+ */
+, EarningsEstimates
+/**
+ * The EarningsEstimatesInfo model constructor.
+ * @property {module:model/EarningsEstimatesInfo}
+ */
+, EarningsEstimatesInfo
+/**
+ * The EbitEstimates model constructor.
+ * @property {module:model/EbitEstimates}
+ */
+, EbitEstimates
+/**
+ * The EbitEstimatesInfo model constructor.
+ * @property {module:model/EbitEstimatesInfo}
+ */
+, EbitEstimatesInfo
+/**
+ * The EbitdaEstimates model constructor.
+ * @property {module:model/EbitdaEstimates}
+ */
+, EbitdaEstimates
+/**
+ * The EbitdaEstimatesInfo model constructor.
+ * @property {module:model/EbitdaEstimatesInfo}
+ */
+, EbitdaEstimatesInfo
+/**
+ * The EconomicCalendar model constructor.
+ * @property {module:model/EconomicCalendar}
+ */
+, EconomicCalendar
+/**
+ * The EconomicCode model constructor.
+ * @property {module:model/EconomicCode}
+ */
+, EconomicCode
+/**
+ * The EconomicData model constructor.
+ * @property {module:model/EconomicData}
+ */
+, EconomicData
+/**
+ * The EconomicDataInfo model constructor.
+ * @property {module:model/EconomicDataInfo}
+ */
+, EconomicDataInfo
+/**
+ * The EconomicEvent model constructor.
+ * @property {module:model/EconomicEvent}
+ */
+, EconomicEvent
+/**
+ * The FDAComitteeMeeting model constructor.
+ * @property {module:model/FDAComitteeMeeting}
+ */
+, FDAComitteeMeeting
+/**
+ * The Filing model constructor.
+ * @property {module:model/Filing}
+ */
+, Filing
+/**
+ * The FilingSentiment model constructor.
+ * @property {module:model/FilingSentiment}
+ */
+, FilingSentiment
+/**
+ * The FinancialStatements model constructor.
+ * @property {module:model/FinancialStatements}
+ */
+, FinancialStatements
+/**
+ * The FinancialsAsReported model constructor.
+ * @property {module:model/FinancialsAsReported}
+ */
+, FinancialsAsReported
+/**
+ * The ForexCandles model constructor.
+ * @property {module:model/ForexCandles}
+ */
+, ForexCandles
+/**
+ * The ForexSymbol model constructor.
+ * @property {module:model/ForexSymbol}
+ */
+, ForexSymbol
+/**
+ * The Forexrates model constructor.
+ * @property {module:model/Forexrates}
+ */
+, Forexrates
+/**
+ * The FundOwnership model constructor.
+ * @property {module:model/FundOwnership}
+ */
+, FundOwnership
+/**
+ * The FundOwnershipInfo model constructor.
+ * @property {module:model/FundOwnershipInfo}
+ */
+, FundOwnershipInfo
+/**
+ * The HistoricalNBBO model constructor.
+ * @property {module:model/HistoricalNBBO}
+ */
+, HistoricalNBBO
+/**
+ * The IPOCalendar model constructor.
+ * @property {module:model/IPOCalendar}
+ */
+, IPOCalendar
+/**
+ * The IPOEvent model constructor.
+ * @property {module:model/IPOEvent}
+ */
+, IPOEvent
+/**
+ * The IndexHistoricalConstituent model constructor.
+ * @property {module:model/IndexHistoricalConstituent}
+ */
+, IndexHistoricalConstituent
+/**
+ * The Indicator model constructor.
+ * @property {module:model/Indicator}
+ */
+, Indicator
+/**
+ * The IndicesConstituents model constructor.
+ * @property {module:model/IndicesConstituents}
+ */
+, IndicesConstituents
+/**
+ * The IndicesHistoricalConstituents model constructor.
+ * @property {module:model/IndicesHistoricalConstituents}
+ */
+, IndicesHistoricalConstituents
+/**
+ * The InsiderSentiments model constructor.
+ * @property {module:model/InsiderSentiments}
+ */
+, InsiderSentiments
+/**
+ * The InsiderSentimentsData model constructor.
+ * @property {module:model/InsiderSentimentsData}
+ */
+, InsiderSentimentsData
+/**
+ * The InsiderTransactions model constructor.
+ * @property {module:model/InsiderTransactions}
+ */
+, InsiderTransactions
+/**
+ * The InternationalFiling model constructor.
+ * @property {module:model/InternationalFiling}
+ */
+, InternationalFiling
+/**
+ * The InvestmentThemePortfolio model constructor.
+ * @property {module:model/InvestmentThemePortfolio}
+ */
+, InvestmentThemePortfolio
+/**
+ * The InvestmentThemes model constructor.
+ * @property {module:model/InvestmentThemes}
+ */
+, InvestmentThemes
+/**
+ * The KeyCustomersSuppliers model constructor.
+ * @property {module:model/KeyCustomersSuppliers}
+ */
+, KeyCustomersSuppliers
+/**
+ * The LastBidAsk model constructor.
+ * @property {module:model/LastBidAsk}
+ */
+, LastBidAsk
+/**
+ * The LobbyingData model constructor.
+ * @property {module:model/LobbyingData}
+ */
+, LobbyingData
+/**
+ * The LobbyingResult model constructor.
+ * @property {module:model/LobbyingResult}
+ */
+, LobbyingResult
+/**
+ * The MarketNews model constructor.
+ * @property {module:model/MarketNews}
+ */
+, MarketNews
+/**
+ * The MutualFundCountryExposure model constructor.
+ * @property {module:model/MutualFundCountryExposure}
+ */
+, MutualFundCountryExposure
+/**
+ * The MutualFundCountryExposureData model constructor.
+ * @property {module:model/MutualFundCountryExposureData}
+ */
+, MutualFundCountryExposureData
+/**
+ * The MutualFundHoldings model constructor.
+ * @property {module:model/MutualFundHoldings}
+ */
+, MutualFundHoldings
+/**
+ * The MutualFundHoldingsData model constructor.
+ * @property {module:model/MutualFundHoldingsData}
+ */
+, MutualFundHoldingsData
+/**
+ * The MutualFundProfile model constructor.
+ * @property {module:model/MutualFundProfile}
+ */
+, MutualFundProfile
+/**
+ * The MutualFundProfileData model constructor.
+ * @property {module:model/MutualFundProfileData}
+ */
+, MutualFundProfileData
+/**
+ * The MutualFundSectorExposure model constructor.
+ * @property {module:model/MutualFundSectorExposure}
+ */
+, MutualFundSectorExposure
+/**
+ * The MutualFundSectorExposureData model constructor.
+ * @property {module:model/MutualFundSectorExposureData}
+ */
+, MutualFundSectorExposureData
+/**
+ * The NewsSentiment model constructor.
+ * @property {module:model/NewsSentiment}
+ */
+, NewsSentiment
+/**
+ * The Ownership model constructor.
+ * @property {module:model/Ownership}
+ */
+, Ownership
+/**
+ * The OwnershipInfo model constructor.
+ * @property {module:model/OwnershipInfo}
+ */
+, OwnershipInfo
+/**
+ * The PatternRecognition model constructor.
+ * @property {module:model/PatternRecognition}
+ */
+, PatternRecognition
+/**
+ * The PressRelease model constructor.
+ * @property {module:model/PressRelease}
+ */
+, PressRelease
+/**
+ * The PriceTarget model constructor.
+ * @property {module:model/PriceTarget}
+ */
+, PriceTarget
+/**
+ * The Quote model constructor.
+ * @property {module:model/Quote}
+ */
+, Quote
+/**
+ * The RecommendationTrend model constructor.
+ * @property {module:model/RecommendationTrend}
+ */
+, RecommendationTrend
+/**
+ * The RedditSentimentContent model constructor.
+ * @property {module:model/RedditSentimentContent}
+ */
+, RedditSentimentContent
+/**
+ * The Report model constructor.
+ * @property {module:model/Report}
+ */
+, Report
+/**
+ * The RevenueBreakdown model constructor.
+ * @property {module:model/RevenueBreakdown}
+ */
+, RevenueBreakdown
+/**
+ * The RevenueEstimates model constructor.
+ * @property {module:model/RevenueEstimates}
+ */
+, RevenueEstimates
+/**
+ * The RevenueEstimatesInfo model constructor.
+ * @property {module:model/RevenueEstimatesInfo}
+ */
+, RevenueEstimatesInfo
+/**
+ * The SECSentimentAnalysis model constructor.
+ * @property {module:model/SECSentimentAnalysis}
+ */
+, SECSentimentAnalysis
+/**
+ * The Sentiment model constructor.
+ * @property {module:model/Sentiment}
+ */
+, Sentiment
+/**
+ * The SimilarityIndex model constructor.
+ * @property {module:model/SimilarityIndex}
+ */
+, SimilarityIndex
+/**
+ * The SimilarityIndexInfo model constructor.
+ * @property {module:model/SimilarityIndexInfo}
+ */
+, SimilarityIndexInfo
+/**
+ * The SocialSentiment model constructor.
+ * @property {module:model/SocialSentiment}
+ */
+, SocialSentiment
+/**
+ * The Split model constructor.
+ * @property {module:model/Split}
+ */
+, Split
+/**
+ * The StockCandles model constructor.
+ * @property {module:model/StockCandles}
+ */
+, StockCandles
+/**
+ * The StockSymbol model constructor.
+ * @property {module:model/StockSymbol}
+ */
+, StockSymbol
+/**
+ * The StockTranscripts model constructor.
+ * @property {module:model/StockTranscripts}
+ */
+, StockTranscripts
+/**
+ * The SupplyChainRelationships model constructor.
+ * @property {module:model/SupplyChainRelationships}
+ */
+, SupplyChainRelationships
+/**
+ * The SupportResistance model constructor.
+ * @property {module:model/SupportResistance}
+ */
+, SupportResistance
+/**
+ * The SymbolLookup model constructor.
+ * @property {module:model/SymbolLookup}
+ */
+, SymbolLookup
+/**
+ * The SymbolLookupInfo model constructor.
+ * @property {module:model/SymbolLookupInfo}
+ */
+, SymbolLookupInfo
+/**
+ * The TechnicalAnalysis model constructor.
+ * @property {module:model/TechnicalAnalysis}
+ */
+, TechnicalAnalysis
+/**
+ * The TickData model constructor.
+ * @property {module:model/TickData}
+ */
+, TickData
+/**
+ * The Transactions model constructor.
+ * @property {module:model/Transactions}
+ */
+, Transactions
+/**
+ * The TranscriptContent model constructor.
+ * @property {module:model/TranscriptContent}
+ */
+, TranscriptContent
+/**
+ * The TranscriptParticipant model constructor.
+ * @property {module:model/TranscriptParticipant}
+ */
+, TranscriptParticipant
+/**
+ * The Trend model constructor.
+ * @property {module:model/Trend}
+ */
+, Trend
+/**
+ * The TwitterSentimentContent model constructor.
+ * @property {module:model/TwitterSentimentContent}
+ */
+, TwitterSentimentContent
+/**
+ * The UpgradeDowngrade model constructor.
+ * @property {module:model/UpgradeDowngrade}
+ */
+, UpgradeDowngrade
+/**
+ * The UsaSpending model constructor.
+ * @property {module:model/UsaSpending}
+ */
+, UsaSpending
+/**
+ * The UsaSpendingResult model constructor.
+ * @property {module:model/UsaSpendingResult}
+ */
+, UsaSpendingResult
+/**
+ * The UsptoPatent model constructor.
+ * @property {module:model/UsptoPatent}
+ */
+, UsptoPatent
+/**
+ * The UsptoPatentResult model constructor.
+ * @property {module:model/UsptoPatentResult}
+ */
+, UsptoPatentResult
+/**
+ * The VisaApplication model constructor.
+ * @property {module:model/VisaApplication}
+ */
+, VisaApplication
+/**
+ * The VisaApplicationResult model constructor.
+ * @property {module:model/VisaApplicationResult}
+ */
+, VisaApplicationResult
+/**
+* The DefaultApi service constructor.
+* @property {module:api/DefaultApi}
+*/
+, DefaultApi };
